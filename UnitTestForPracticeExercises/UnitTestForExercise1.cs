@@ -5,13 +5,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestForPracticeExercises
 {
     [TestClass]
-    public class UnitTestExercise1
+    public class UnitTestForExercise1
     {
         [TestMethod]
         public void TestMethod1()
         {
             // Arrange
-
+            
             var user = new Person()
             {
                 Name = "John Fleming"

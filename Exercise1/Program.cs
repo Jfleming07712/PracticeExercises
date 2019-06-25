@@ -4,7 +4,7 @@ namespace Exercise1
 {
     //1. Write a C# Sharp program to print Hello and your name in a separate line. Go to the editor
     //Expected Output : 
-    //Hello: Alexandra Abramov
+    //Hello: John Fleming
     public class Program
     { 
 
