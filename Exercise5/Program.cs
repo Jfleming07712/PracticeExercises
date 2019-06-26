@@ -12,6 +12,8 @@ namespace Exercise5
         //      After Swapping :
         //      First Number : 6 
         //      Second Number : 5 
+
+
         static void Main(string[] args)
         {
 
@@ -51,7 +53,6 @@ namespace Exercise5
                 if (!int.TryParse(stringNumber1, out int n1))
                 {
                     Console.WriteLine("not an int");
-                    stringNumber1 = "wrong";
                     Input1();
                 }
 
@@ -60,26 +61,15 @@ namespace Exercise5
 
             public void Input2()
             {
-                bool valid = true;
-                int n2;
-                do
-                {
                     Console.WriteLine("Enter your second number");
                     var stringNumber2 = Console.ReadLine();
+                    
 
                     //int n2;
-                    if (!int.TryParse(stringNumber2, out n2))
+                    if (!int.TryParse(stringNumber2, out int n2))
                     {
                         Console.WriteLine("not an int");
-                        valid = false;
                     }
-                }
-                while (valid == false);
-
-
-
-                
-
                 Number2 = n2;
             }
         }
