@@ -20,7 +20,7 @@ namespace Exercise5
             var container = new NumberContainer();
 
             container.Input1();
-            container.Input2();
+            
 
             Console.WriteLine("pre switch");
             Console.WriteLine(container.Number1);
@@ -62,10 +62,7 @@ namespace Exercise5
                         valid = true;
                     }
                 }
-            }
 
-            public void Input2()
-            {
                 bool valid2 = false;
                 while (valid2 == false)
                 {
