@@ -46,31 +46,42 @@ namespace Exercise5
 
             public void Input1()
             {
-                Console.WriteLine("enter your first number");
-                var stringNumber1 = Console.ReadLine();
-
-                //int n1;
-                if (!int.TryParse(stringNumber1, out int n1))
+                bool valid = false;
+                while (valid == false)
                 {
-                    Console.WriteLine("not an int");
-                    Input1();
-                }
+                    Console.WriteLine("enter your first number");
+                    var stringNumber1 = Console.ReadLine();
 
-                Number1 = n1;
+                    if (!int.TryParse(stringNumber1, out int n1))
+                    {
+                        Console.WriteLine("not an int");
+                    }
+                    else
+                    {
+                        Number1 = n1;
+                        valid = true;
+                    }
+                }
             }
 
             public void Input2()
             {
-                    Console.WriteLine("Enter your second number");
+                bool valid2 = false;
+                while (valid2 == false)
+                {
+                    Console.WriteLine("enter your second number");
                     var stringNumber2 = Console.ReadLine();
-                    
 
-                    //int n2;
                     if (!int.TryParse(stringNumber2, out int n2))
                     {
                         Console.WriteLine("not an int");
                     }
-                Number2 = n2;
+                    else
+                    {
+                        Number2 = n2;
+                        valid2 = true;
+                    }
+                }
             }
         }
     }
