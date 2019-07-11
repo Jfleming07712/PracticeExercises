@@ -6,7 +6,7 @@ namespace Exercise6
 {
     public class UserInterface
     {
-        public static void GatherNumbersToMultiply(NumberContainer container)
+        public void GatherNumbersToMultiply(NumberContainer container)
         {
             
             bool valid = false;
@@ -60,6 +60,11 @@ namespace Exercise6
                 }
             }
 
+        }
+
+        public void DisplayAnswer(NumberContainer container)
+        {
+            Console.WriteLine( container.Number1 + " * " + container.Number2 + " * " + container.Number3 + " = " + container.Result);
         }
 
     }

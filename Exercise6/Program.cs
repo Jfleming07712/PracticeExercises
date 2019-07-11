@@ -22,12 +22,14 @@ namespace Exercise6
         public static void Main(string[] args)
         {
             NumberContainer container = new NumberContainer();
+            Multiplier multiplyThreeNumbers = new Multiplier();
+            UserInterface userInterface = new UserInterface();
 
+            userInterface.GatherNumbersToMultiply(container);
 
-            UserInterface.GatherNumbersToMultiply(container);
+            multiplyThreeNumbers.DoMultiplication(container);
 
-            Multiplier.DoMultiplication(container);
-            
+            userInterface.DisplayAnswer(container);
         }
     }
 }
