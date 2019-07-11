@@ -6,17 +6,18 @@ namespace Exercise6
 {
     public class Multiplier
     {
-        public int DoMultiplication()
+        public static void DoMultiplication(NumberContainer container)
         {
-            var container = new NumberContainer();
 
-            container.Number1 = 2;
-            container.Number2 = 3;
-            container.Number3 = 4;
+            //container.Number1 = 2;
+            //container.Number2 = 3;
+            //container.Number3 = 6;
 
             container.Result = container.Number1 * container.Number2 * container.Number3;
 
-            return container.Result;
+            Console.WriteLine("Result is " + container.Result);
         }
+
+        
     }
 }

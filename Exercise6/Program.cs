@@ -13,11 +13,21 @@ namespace Exercise6
         //Expected Output:
         //2 x 3 x 6 = 36
 
+        
+        
+        
+
+
+
         public static void Main(string[] args)
         {
-            
+            NumberContainer container = new NumberContainer();
 
-            Console.WriteLine(Multiplier.container.Result);
+
+            UserInterface.GatherNumbersToMultiply(container);
+
+            Multiplier.DoMultiplication(container);
+            
         }
     }
 }
