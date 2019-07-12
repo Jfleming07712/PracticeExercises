@@ -123,7 +123,13 @@ namespace Exercise10
 
         public void DisplayEquationOne(NumberContainer container)
         {
-            Console.WriteLine("(" + container.Number1 + "+" + container.Number2 + ") *" + container.Number3 + "equals" + container.Result1);
+            Console.WriteLine("(" + container.Number1 + "+" + container.Number2 + ")*" + container.Number3 + " equals " + container.Result1);
+        }
+
+        public void DisplayEquationTwo(NumberContainer container)
+        {
+            Console.WriteLine(container.Number1 + "*" + container.Number2 + " + " + container.Number2 + "*" + container.Number3 + " equals " + container.Result2 );
         }
     }
+
 }

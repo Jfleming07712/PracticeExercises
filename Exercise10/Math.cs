@@ -69,7 +69,7 @@ namespace Exercise10
 
         public double EquationTwo(NumberContainer container)
         {
-            container.Result = (container.Number1 * container.Number2) + (container.Number2 * container.Number3);
+            container.Result2 = (container.Number1 * container.Number2) + (container.Number2 * container.Number3);
 
             return container.Result2;
         }

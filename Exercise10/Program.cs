@@ -24,8 +24,11 @@ namespace Exercise10
             userInterface.GatherNumbers(container);
 
             doMath.EquationOne(container);
+            doMath.EquationTwo(container);
+
 
             userInterface.DisplayEquationOne(container);
+            userInterface.DisplayEquationTwo(container);
 
         }
     }
