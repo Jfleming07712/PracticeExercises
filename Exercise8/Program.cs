@@ -4,7 +4,16 @@ namespace Exercise8
 {
     public class Program
     {
-        
+        //Write a C# Sharp program that takes a number as input and print its multiplication table. Go to the editor
+        //Test Data:
+        //Enter the number: 5
+        //Expected Output:
+        //5 * 0 = 0
+        //5 * 1 = 5
+        //5 * 2 = 10 
+        //5 * 3 = 15
+        //....
+        //5 * 10 = 50
 
 
 
@@ -16,13 +25,8 @@ namespace Exercise8
 
             userInterface.GatherNumbers(container);
 
-            doMath.AddTwoNumbers(container);
-            doMath.SubtractTwoNumbers(container);
-            doMath.MultiplyTwoNumbers(container);
-            doMath.DivideTwoNumbers(container);
-            doMath.ModTwoNumbers(container);
+            doMath.TimesTable(container);
 
-            userInterface.DisplayAnswer(container);
         }
     }
 }

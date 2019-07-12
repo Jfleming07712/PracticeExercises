@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Exercise8
+namespace Exercise10
 {
     public class Math
     {
@@ -53,5 +53,25 @@ namespace Exercise8
             }
         }
 
+        public double AverageFourNumbers(NumberContainer container)
+        {
+            container.Result = (container.Number1 + container.Number2 + container.Number3 + container.Number4) / 4;
+
+            return container.Result;
+        }
+
+        public double EquationOne(NumberContainer container)
+        {
+            container.Result1 = (container.Number1 + container.Number2) * container.Number3;
+
+            return container.Result1;
+        }
+
+        public double EquationTwo(NumberContainer container)
+        {
+            container.Result = (container.Number1 * container.Number2) + (container.Number2 * container.Number3);
+
+            return container.Result2;
+        }
     }
 }
